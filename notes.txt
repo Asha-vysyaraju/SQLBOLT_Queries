@@ -1,0 +1,68 @@
+DataBase
+--------------
+store DataBaseDBMS=>Software,MySQL Workbench,ORACle
+DAta=>Database=>DataBaseDBMSrealational-database || Structured=>SQL,MYSQL,ORACLE<POStgresSQL,SQL SERVER,MIcrosoft SQL server,
+SQLite=>rows & columns
+
+non-relational database || unstructured =>MandoDB,Cassandra,CouchDB,Redis
+
+Evolution of DataBase
+-------------------------
+flat-file system=>Object relational system
+
+IBM=>1970=>relational database model=>Edger Codd=> Table
+
+RDBMS=> 1980 & 1990
+
+MYSQL
+________________
+=>small & large datasets
+
+shell,server,GUI=>3 parts
+
+storage engine=>InnoDb storage engine
+
+ACID-Atomicity,Consistency,ISolation ,Durability
+
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE dept = 'Sales';
+
+-- create
+CREATE TABLE STUDENT (
+  stdId INT AUTO_INCREMENT PRIMARY KEY,
+   FirstName varchar(20),
+  LastName varchar(20),
+  Age INTEGER
+);
+
+-- -- insert
+INSERT INTO STUDENT(FirstName,LastName,Age) VALUES
+("JOhn", 'Clark', '20'),
+("Dave", 'Clark', '21'),
+("Andrew", 'Johnson', '22')
+;
+
+-- -- fetch 
+
+SELECT * from STUDENT
+
++-------+-----------+----------+------+
+| stdId | FirstName | LastName | Age  |
++-------+-----------+----------+------+
+|     1 | JOhn      | Clark    |   20 |
+|     2 | Dave      | Clark    |   21 |
+|     3 | Andrew    | Johnson  |   22 |
++-------+-----------+----------+------+
